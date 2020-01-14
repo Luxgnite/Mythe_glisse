@@ -295,7 +295,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e2fcb36211f8094587a192c534de898, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 661066114}
 --- !u!61 &490142462
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -658,6 +657,7 @@ GameObject:
   m_Component:
   - component: {fileID: 632674966}
   - component: {fileID: 632674967}
+  - component: {fileID: 632674968}
   m_Layer: 0
   m_Name: Restarter
   m_TagString: Untagged
@@ -705,6 +705,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.97, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &632674968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632674965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8258ffc969956a84c8759d7fa971a693, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &643346855
 GameObject:
   m_ObjectHideFlags: 0

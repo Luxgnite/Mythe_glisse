@@ -5,19 +5,35 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager instance = null;
+
     public GameObject camera;
     public GameObject[] guiElements;
     public GameObject player;
 
-    // Update is called once per frame
-    void Update()
+    void Awake()
     {
-        
+        if (instance == null)
+
+            instance = this;
+
+        else if (instance != this)
+            Destroy(gameObject);
+
+        DontDestroyOnLoad(gameObject);
+
+        InitGame();
+    }
+
+    public void InitGame()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     public void RestartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        InitGame();
     }
 
     public void EndLevel()
