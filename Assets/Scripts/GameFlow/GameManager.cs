@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject camera;
     public GameObject player;
+    public List<Collectible> collectibles;
 
     public Text gameOverText;
     public Button restartButton;
@@ -24,6 +25,7 @@ public class GameManager : MonoBehaviour
         //DontDestroyOnLoad(gameObject);
 
         InitGame();
+        
     }
 
     public void InitGame()
@@ -45,4 +47,10 @@ public class GameManager : MonoBehaviour
         restartButton.gameObject.SetActive(true);
         camera.GetComponent<AudioSource>().Play();
     }
+
+    public void CollectItem()
+    {
+        if(collectibles.Count < 0)
+            collectibles.RemoveAt(0);
+    }   
 }
