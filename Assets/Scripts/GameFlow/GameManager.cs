@@ -32,6 +32,8 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Initializing game...");
         player = GameObject.FindGameObjectWithTag("Player");
+
+        collectibles = GetComponent<LevelParameters>().collectibles;
     }
 
     public void RestartLevel()
@@ -50,7 +52,7 @@ public class GameManager : MonoBehaviour
 
     public void CollectItem()
     {
-        if(collectibles.Count < 0)
+        if(collectibles.Count > 0)
             collectibles.RemoveAt(0);
     }   
 }
