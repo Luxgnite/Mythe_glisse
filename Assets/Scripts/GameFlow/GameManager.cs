@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    public Sprite lifeIconLost;
+
     public static GameManager instance = null;
 
     public GameObject camera;
@@ -98,5 +100,6 @@ public class GameManager : MonoBehaviour
     public void LoseLife(int lifeLosed = 1)
     {
         rollerLife -= lifeLosed;
+        GameObject.Find("Life " + rollerLife).GetComponent<SpriteRenderer>().sprite = lifeIconLost;
     }
 }
