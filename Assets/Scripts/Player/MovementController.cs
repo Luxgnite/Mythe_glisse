@@ -11,6 +11,7 @@ public class MovementController : MonoBehaviour
     public float baseSpeed = 1f;
     public int actualSpeedLevel = 0;
     public float accelByLevel = 2f;
+    public float jumpByLevel = 2f;
     public float jumpForce = 1f;
 
     private Rigidbody2D rb;
@@ -46,16 +47,16 @@ public class MovementController : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Z) && isGrounded && canJump)
         {
-            rb.velocity = Vector2.up * jumpForce;
+            rb.velocity = new Vector2(0.8f, 0.6f) * (jumpForce + jumpByLevel * actualSpeedLevel);
         }
 
-        if(Input.GetKeyDown(KeyCode.D))
+        if(Input.GetKeyDown(KeyCode.D) && canAccel)
         {
             if (actualSpeedLevel < 2)
                 actualSpeedLevel++;
         }
 
-        if (Input.GetKeyDown(KeyCode.Q) && canAccel)
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             if (actualSpeedLevel > 0)
                 actualSpeedLevel--;
