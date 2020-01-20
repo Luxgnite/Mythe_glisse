@@ -12,6 +12,9 @@ public class GameManager : MonoBehaviour
     public GameObject player;
     public List<Collectible> collectibles;
 
+    public int startingRollerLife = 3;
+    public int rollerLife;
+
     public Text gameOverText;
     public Button restartButton;
 
@@ -28,12 +31,20 @@ public class GameManager : MonoBehaviour
         
     }
 
+    void FixedUpdate()
+    {
+        if (rollerLife <= 0)
+            GameOver("Vos rollers se sont brisés");
+    }
+
     public void InitGame()
     {
         Debug.Log("Initializing game...");
         player = GameObject.FindGameObjectWithTag("Player");
 
         collectibles = GetComponent<LevelParameters>().collectibles;
+
+        rollerLife = startingRollerLife;
     }
 
     public void RestartLevel()
@@ -50,9 +61,42 @@ public class GameManager : MonoBehaviour
         camera.GetComponent<AudioSource>().Play();
     }
 
+    public void GameOver(string text = "Vos rollers se sont brisés")
+    {
+        foreach (Enemy enemy in FindObjectsOfType<Enemy>())
+        {
+            enemy.enabled = false;
+            //Refactoriser les classes de mouvement en créant une classe mère abstraite
+            if (enemy.gameObject.GetComponent<Moto>() != null)
+            {
+                enemy.gameObject.GetComponent<Moto>().StopMovement();
+                enemy.gameObject.GetComponent<Moto>().enabled = false;
+            }
+
+            if (enemy.gameObject.GetComponent<Drone>() != null)
+            {
+                enemy.gameObject.GetComponent<Drone>().StopMovement();
+                enemy.gameObject.GetComponent<Drone>().enabled = false;
+            }
+        }
+
+        player.GetComponent<MovementController>().StopMovement();
+        player.GetComponent<MovementController>().enabled = false;
+
+        gameOverText.gameObject.SetActive(true);
+        gameOverText.text = text;
+        restartButton.gameObject.SetActive(true);
+        //camera.GetComponent<AudioSource>().Play();
+    }
+
     public void CollectItem()
     {
         if(collectibles.Count > 0)
             collectibles.RemoveAt(0);
-    }   
+    }
+
+    public void LoseLife(int lifeLosed = 1)
+    {
+        rollerLife -= lifeLosed;
+    }
 }

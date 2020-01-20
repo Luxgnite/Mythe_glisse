@@ -62,4 +62,9 @@ public class MovementController : MonoBehaviour
                 actualSpeedLevel--;
         }
     }
+
+    public void StopMovement ()
+    {
+        rb.velocity = Vector2.zero;
+    }
 }
