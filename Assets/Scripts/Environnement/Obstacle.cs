@@ -11,6 +11,7 @@ public class Obstacle : MonoBehaviour
         if(collision.gameObject.tag == "Player")
         {
             MovementController movementPlayer = GameManager.instance.player.GetComponent<MovementController>();
+            movementPlayer.StopMovement();
             movementPlayer.baseSpeed = punishmentSpeed;
             movementPlayer.canJump = false;
             movementPlayer.canAccel = false;

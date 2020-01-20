@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("Initializing game...");
         player = GameObject.FindGameObjectWithTag("Player");
 
-        collectibles = GetComponent<LevelParameters>().collectibles;
+        collectibles = new List<Collectible>(GetComponent<LevelParameters>().collectibles);
 
         rollerLife = startingRollerLife;
     }
@@ -93,8 +93,14 @@ public class GameManager : MonoBehaviour
 
     public void CollectItem()
     {
-        if(collectibles.Count > 0)
+        if (collectibles.Count > 0)
+        {
+            GameObject.Find("Collectible " + collectibles.Count).GetComponent<SpriteRenderer>().enabled = true;
             collectibles.RemoveAt(0);
+            if(collectibles.Count <= 0)
+                GameOver("Vous avez récupéré les différents composants du Cutter Laser! \n Vous réussissez à vous échapper!");
+
+        }
     }
 
     public void LoseLife(int lifeLosed = 1)

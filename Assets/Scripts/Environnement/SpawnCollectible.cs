@@ -12,13 +12,16 @@ public class SpawnCollectible : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
+
         if (collectibleSpawned == null)
+        {
+            Debug.Log(collectibleSpawned);
             Destroy(this.gameObject);
-        else
-            if (collectibleSpawned.collectibleName != GameManager.instance.collectibles[0].collectibleName)
-                Spawn();
+        }
+        else if (collectibleSpawned.collectibleName != GameManager.instance.collectibles[0].collectibleName)
+            Spawn();
     }
         
     void Spawn()
