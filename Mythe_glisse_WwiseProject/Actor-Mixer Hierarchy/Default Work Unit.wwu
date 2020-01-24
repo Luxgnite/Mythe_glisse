@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{717B1285-8E09-430E-BB31-791C475E9A17}" SchemaVersion="94">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{717B1285-8E09-430E-BB31-791C475E9A17}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Sound" ID="{EF107C6B-5DA5-44B8-81A7-22B998313CEC}" ShortID="913929235">
+					<ChildrenList>
+						<Folder Name="BGM" ID="{A3BA3F2B-4470-4C55-B81E-DE8EA8D44579}" ShortID="429371631">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+						</Folder>
+						<Folder Name="BGS" ID="{968E408B-3C32-48AD-B1FB-3AA50C1AA989}" ShortID="234668831"/>
+						<Folder Name="SE" ID="{432876B1-6EF9-4CA0-BEF9-296875E27F35}" ShortID="668055727">
+							<ChildrenList>
+								<Sound Name="end_level" ID="{2654CC6D-D097-4F6C-B68D-D03FFED5BD90}" ShortID="731074224">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D06FB73D-5B8F-4A79-9233-9202F397C86B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{98BE032D-45D6-42BB-9FE5-F9D4E9F42F18}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="end_level" ID="{554AF97E-61DE-4CBD-891C-984D59672E2A}" ShortID="374191828">
+											<Language>SFX</Language>
+											<AudioFile>Sound\SE\end_level.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="end_level" ID="{554AF97E-61DE-4CBD-891C-984D59672E2A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
+						<Sound Name="Aetheric_Grim_Ambient" ID="{2189FB23-E6B6-4DF3-B9E7-AAFD670206B7}" ShortID="59386663">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D06FB73D-5B8F-4A79-9233-9202F397C86B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{98BE032D-45D6-42BB-9FE5-F9D4E9F42F18}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Aetheric_Grim_Ambient" ID="{1D3B262F-879A-4CA5-8D73-84AB831CA436}" ShortID="403400846">
+									<Language>SFX</Language>
+									<AudioFile>Sound\Aetheric_Grim_Ambient.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Aetheric_Grim_Ambient" ID="{1D3B262F-879A-4CA5-8D73-84AB831CA436}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Arrestation_2" ID="{884E4CF0-DFD2-4889-9E3F-C3598A733035}" ShortID="303839989">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D06FB73D-5B8F-4A79-9233-9202F397C86B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{98BE032D-45D6-42BB-9FE5-F9D4E9F42F18}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Arrestation_2" ID="{4FBFC692-2718-4FD3-9F0F-14E2074F0424}" ShortID="1053015446">
+									<Language>SFX</Language>
+									<AudioFile>Sound\Arrestation_2.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Arrestation_2" ID="{4FBFC692-2718-4FD3-9F0F-14E2074F0424}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Arrivee_forces_de_lordre" ID="{F5EE9F86-FD26-4B30-88FF-3352123D8D6C}" ShortID="437550778">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D06FB73D-5B8F-4A79-9233-9202F397C86B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{98BE032D-45D6-42BB-9FE5-F9D4E9F42F18}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Arrivee_forces_de_lordre" ID="{46DC9889-EBF2-4171-A61C-12B0F2196365}" ShortID="924760390">
+									<Language>SFX</Language>
+									<AudioFile>Sound\Arrivee_forces_de_lordre.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Arrivee_forces_de_lordre" ID="{46DC9889-EBF2-4171-A61C-12B0F2196365}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Composant" ID="{B4E55C14-403B-4DF6-A138-8D26C8E2AC95}" ShortID="443482047">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D06FB73D-5B8F-4A79-9233-9202F397C86B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{98BE032D-45D6-42BB-9FE5-F9D4E9F42F18}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Composant" ID="{11F6A048-7233-4B70-9CAA-9EF5D2B07233}" ShortID="144799100">
+									<Language>SFX</Language>
+									<AudioFile>Sound\Composant.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Composant" ID="{11F6A048-7233-4B70-9CAA-9EF5D2B07233}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Da_MADAFUCKAZ_Police" ID="{0DB59D50-230E-4EF8-97E3-97624405E175}" ShortID="21838811">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D06FB73D-5B8F-4A79-9233-9202F397C86B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{98BE032D-45D6-42BB-9FE5-F9D4E9F42F18}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Da_MADAFUCKAZ_Police" ID="{A12E678B-C65B-415B-B24C-91E8997646D1}" ShortID="864317456">
+									<Language>SFX</Language>
+									<AudioFile>Sound\Da_MADAFUCKAZ_Police.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Da_MADAFUCKAZ_Police" ID="{A12E678B-C65B-415B-B24C-91E8997646D1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="ebauche" ID="{C125E004-10A8-44FC-9347-2B509AA95A4E}" ShortID="529555259">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D06FB73D-5B8F-4A79-9233-9202F397C86B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{98BE032D-45D6-42BB-9FE5-F9D4E9F42F18}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ebauche" ID="{16B5DF39-462F-48F4-8947-09C60750ED26}" ShortID="581988071">
+									<Language>SFX</Language>
+									<AudioFile>Sound\ebauche.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="ebauche" ID="{16B5DF39-462F-48F4-8947-09C60750ED26}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Explo_1" ID="{E3B6D6D7-F804-42DF-9269-7130048EEE7B}" ShortID="170792372">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D06FB73D-5B8F-4A79-9233-9202F397C86B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{98BE032D-45D6-42BB-9FE5-F9D4E9F42F18}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Explo_1" ID="{C04F2AAC-05AB-4914-A359-248276F35E07}" ShortID="859312004">
+									<Language>SFX</Language>
+									<AudioFile>Sound\Explo_1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Explo_1" ID="{C04F2AAC-05AB-4914-A359-248276F35E07}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Rollers" ID="{41717FBA-A2A2-46B1-8F36-FF397B71487D}" ShortID="204396377">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D06FB73D-5B8F-4A79-9233-9202F397C86B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{98BE032D-45D6-42BB-9FE5-F9D4E9F42F18}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Rollers" ID="{233E0406-E219-476F-9091-1D17467D59C5}" ShortID="476721496">
+									<Language>SFX</Language>
+									<AudioFile>Sound\Rollers.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Rollers" ID="{233E0406-E219-476F-9091-1D17467D59C5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Rollers_detruits" ID="{52E11438-FFA8-4735-87B4-3F1E806DDD70}" ShortID="906874945">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D06FB73D-5B8F-4A79-9233-9202F397C86B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{98BE032D-45D6-42BB-9FE5-F9D4E9F42F18}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Rollers_detruits" ID="{1F449447-7410-469A-9640-AFF5C9EDD566}" ShortID="837003393">
+									<Language>SFX</Language>
+									<AudioFile>Sound\Rollers_detruits.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Rollers_detruits" ID="{1F449447-7410-469A-9640-AFF5C9EDD566}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

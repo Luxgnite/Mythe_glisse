@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{CF08A6D6-1EC5-48C6-8B69-ECE071124376}" SchemaVersion="94">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{CF08A6D6-1EC5-48C6-8B69-ECE071124376}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="AsYouWant_event" ID="{9F51394A-6A62-4F75-BB3F-38A3B87A2191}">
+					<ChildrenList>
+						<Action Name="" ID="{B279528F-1433-46AF-BF48-7DBC0550E60A}" ShortID="1024698963">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rollers_detruits" ID="{52E11438-FFA8-4735-87B4-3F1E806DDD70}" WorkUnitID="{717B1285-8E09-430E-BB31-791C475E9A17}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

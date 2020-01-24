@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1DA9B6EE-119C-4D05-86A0-C7DC4043B7E5}" SchemaVersion="94">
+	<InteractiveMusic>
+		<WorkUnit Name="Default Work Unit" ID="{1DA9B6EE-119C-4D05-86A0-C7DC4043B7E5}" PersistMode="Standalone">
+			<ChildrenList>
+				<MusicSegment Name="BGM" ID="{D2B551A3-A099-46A0-845E-AB776654FDC4}" ShortID="1006713921">
+					<PropertyList>
+						<Property Name="EndPosition" Type="Real64" Value="5116.05442176871"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D06FB73D-5B8F-4A79-9233-9202F397C86B}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{98BE032D-45D6-42BB-9FE5-F9D4E9F42F18}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicTrack Name="ebauche" ID="{B5EE368B-B99E-46CA-9105-2B035FCFA7FA}" ShortID="18227792">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{98BE032D-45D6-42BB-9FE5-F9D4E9F42F18}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="ebauche" ID="{0DA0F1FC-8687-40C0-AF73-C4C6C209AE00}" ShortID="858281629">
+									<Language>SFX</Language>
+									<AudioFile>BGM\ebauche.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{E83E30B0-9AEA-4629-97B6-FD3767D3C040}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<SequenceList>
+								<MusicTrackSequence Name="" ID="{3F3D04A6-7743-4DDF-8023-0F644967833E}">
+									<ClipList>
+										<MusicClip Name="ebauche" ID="{D3E30C0D-2959-40C0-8F24-8BFC14FC390B}">
+											<PropertyList>
+												<Property Name="EndTrimOffset" Type="Real64" Value="5116.05442176871"/>
+												<Property Name="FadeInMode" Type="int16" Value="0"/>
+												<Property Name="FadeOutMode" Type="int16" Value="0"/>
+											</PropertyList>
+											<AudioSourceRef Name="ebauche" ID="{0DA0F1FC-8687-40C0-AF73-C4C6C209AE00}"/>
+										</MusicClip>
+									</ClipList>
+								</MusicTrackSequence>
+							</SequenceList>
+						</MusicTrack>
+					</ChildrenList>
+					<CueList>
+						<MusicCue Name="Entry Cue" ID="{EFE3A4C8-9851-4A83-B9A1-D342F15A7A96}"/>
+						<MusicCue Name="Exit Cue" ID="{4F6A5A08-056D-4D6E-929E-732F344079C4}">
+							<PropertyList>
+								<Property Name="CueType" Type="int16" Value="1"/>
+								<Property Name="TimeMs" Type="Real64" Value="1000"/>
+							</PropertyList>
+						</MusicCue>
+					</CueList>
+				</MusicSegment>
+			</ChildrenList>
+		</WorkUnit>
+	</InteractiveMusic>
+</WwiseDocument>
