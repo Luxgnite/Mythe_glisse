@@ -47,6 +47,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Roller_sound_event" ID="{59D32C1E-3FDC-424D-A8A2-A010E7271185}">
+					<ChildrenList>
+						<Action Name="" ID="{F806DB47-274B-42AA-80E9-676DDA814B91}" ShortID="512167003">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambiant_Sound_Switch" ID="{EE8B33CA-40F6-4068-A065-17E38DB6F712}" WorkUnitID="{1DA9B6EE-119C-4D05-86A0-C7DC4043B7E5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

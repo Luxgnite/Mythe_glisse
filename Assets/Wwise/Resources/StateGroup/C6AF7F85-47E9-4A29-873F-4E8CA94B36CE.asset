@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22c8be16d5f5e1c4b98db706796a280a, type: 3}
+  m_Name: C6AF7F85-47E9-4A29-873F-4E8CA94B36CE
+  m_EditorClassIdentifier: 
+  objectName: Ground_or_Air_group
+  id: 582155773
+  guid: C6AF7F85-47E9-4A29-873F-4E8CA94B36CE

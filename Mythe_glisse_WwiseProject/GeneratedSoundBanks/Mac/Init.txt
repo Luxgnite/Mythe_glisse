@@ -1,3 +1,11 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	582155773	Ground_or_air_group			\Default Work Unit\Ground_or_air_group	
+
+State	ID	Name	State Group			Notes
+	0	None	Ground_or_air_group			
+	1050421051	Air	Ground_or_air_group			
+	2528658256	Ground	Ground_or_air_group			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 

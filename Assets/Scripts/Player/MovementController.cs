@@ -35,7 +35,13 @@ public class MovementController : MonoBehaviour
     void FixedUpdate()
     {
 
+
         isGrounded = Physics2D.OverlapArea(groundCheckA.position, groundCheckB.position, whatIsGround);
+
+        if (isGrounded)
+            AkSoundEngine.SetState("Ground_or_Air_group", "Ground");
+        else
+            AkSoundEngine.SetState("Ground_or_Air_group", "Air");
 
         rb.velocity = new Vector2(baseSpeed + actualSpeedLevel * accelByLevel , rb.velocity.y);
 

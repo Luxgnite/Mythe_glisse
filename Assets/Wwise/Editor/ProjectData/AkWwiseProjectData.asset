@@ -31,7 +31,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: a1a5e38c213bb64abea6c2596ae4bd7f
     GuidInternal: 
-    m_lastTime: -8586216947147027297
+    m_lastTime: -8586216941878716421
     List:
     - name: Main
       guid: 5efb9ec500cf134dbd63b389c459146a
@@ -47,7 +47,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: d6a608cfc51ec6488b69ece071124376
     GuidInternal: 
-    m_lastTime: -8586216947253074863
+    m_lastTime: -8586216296932033143
     List:
     - name: Arrested_event
       guid: 4a39519f626a754fbb3f38a3b87a2191
@@ -61,15 +61,15 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Pick_componant_event
+    - name: Pick_collectible
       guid: a70838549465da478f854ee9ce620a60
-      id: 1764974443
+      id: 686279469
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Pick_componant_event
+      - ElementName: Pick_collectible
         ObjectType: 3
-      Path: Default Work Unit\Pick_componant_event
+      Path: Default Work Unit\Pick_collectible
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -97,6 +97,18 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Roller_Sound_event
+      guid: 1e2cd359dc3f4d42a8a2a010e7271185
+      id: 3738053536
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Roller_Sound_event
+        ObjectType: 3
+      Path: Default Work Unit\Roller_Sound_event
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -109,8 +121,39 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: d2adea11f1577c4fad412e50b9bf5000
     GuidInternal: 
-    m_lastTime: -8586216963118269218
-    List: []
+    m_lastTime: -8586216307444588875
+    List:
+    - name: Ground_or_Air_group
+      guid: 857fafc6e947294a873f4e8ca94b36ce
+      id: 582155773
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ground_or_Air_group
+        ObjectType: 9
+      Path: Default Work Unit\Ground_or_Air_group
+      values:
+      - name: Air
+        guid: 3ca13816a65a7248a9c8d5c4c1ef167d
+        id: 1050421051
+        PathAndIcons:
+        - ElementName: Air
+          ObjectType: 8
+      - name: Ground
+        guid: 83427642735a564dbc4208de9ea4202d
+        id: 2528658256
+        PathAndIcons:
+        - ElementName: Ground
+          ObjectType: 8
+      - name: None
+        guid: dbb01809e6543a4ea787b6bc5d5ccea8
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -129,7 +172,7 @@ MonoBehaviour:
   - /Mythe_glisse_WwiseProject
   - /Mythe_glisse_WwiseProject/Events
   - /Mythe_glisse_WwiseProject/Events/Default Work Unit
-  - /Mythe_glisse_WwiseProject/SoundBanks
-  - /Mythe_glisse_WwiseProject/SoundBanks/Default Work Unit
+  - /Mythe_glisse_WwiseProject/States
+  - /Mythe_glisse_WwiseProject/States/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

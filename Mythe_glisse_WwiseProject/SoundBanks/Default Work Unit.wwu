@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{C59EFB5E-CF00-4D13-BD63-B389C459146A}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Roller_sound_event" ID="{59D32C1E-3FDC-424D-A8A2-A010E7271185}" WorkUnitID="{CF08A6D6-1EC5-48C6-8B69-ECE071124376}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Police_alarm_event" ID="{211669AF-F675-46C8-B70E-0EEB93241628}" WorkUnitID="{CF08A6D6-1EC5-48C6-8B69-ECE071124376}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Pick_collectible" ID="{543808A7-6594-47DA-8F85-4EE9CE620A60}" WorkUnitID="{CF08A6D6-1EC5-48C6-8B69-ECE071124376}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Arrested_event" ID="{9F51394A-6A62-4F75-BB3F-38A3B87A2191}" WorkUnitID="{CF08A6D6-1EC5-48C6-8B69-ECE071124376}" Filter="7" Origin="Manual"/>
