@@ -7,9 +7,8 @@ public class Enemy : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player")
-        {
-            AkSoundEngine.PostEvent("Arrested_event", GameManager.instance.gameObject);
-            GameManager.instance.GameOver("Vous avez été arrêté par la police...");
+        { 
+            GameManager.instance.GameOver(GameManager.LOSE_POLICE);
         }
     }
 }

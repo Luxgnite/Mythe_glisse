@@ -14,6 +14,12 @@ public class GameManager : MonoBehaviour
     public GameObject player;
     public List<Collectible> collectibles;
 
+    public const string LOSE_ROLLER = "roller"; 
+    public const string LOSE_POLICE = "police"; 
+    public const string WIN_COLLECTIBLE = "collectible";
+
+    private bool isGameOver = false;
+
     public int startingRollerLife = 3;
     public int rollerLife;
 
@@ -35,10 +41,9 @@ public class GameManager : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (rollerLife <= 0)
+        if (rollerLife <= 0 && !isGameOver)
         {
-            AkSoundEngine.PostEvent("Roller_destroyed_event", this.gameObject);
-            GameOver("Vos rollers se sont brisés");
+            GameOver(LOSE_ROLLER);
         }
     }
 
@@ -50,6 +55,7 @@ public class GameManager : MonoBehaviour
         collectibles = new List<Collectible>(GetComponent<LevelParameters>().collectibles);
 
         rollerLife = startingRollerLife;
+        isGameOver = false;
     }
 
     public void RestartLevel()
@@ -67,8 +73,10 @@ public class GameManager : MonoBehaviour
         camera.GetComponent<AudioSource>().Play();
     }
 
-    public void GameOver(string text = "Vos rollers se sont brisés")
+    public void GameOver(string endState)
     {
+        string endText = "";
+
         foreach (Enemy enemy in FindObjectsOfType<Enemy>())
         {
             enemy.enabled = false;
@@ -89,8 +97,25 @@ public class GameManager : MonoBehaviour
         player.GetComponent<MovementController>().StopMovement();
         player.GetComponent<MovementController>().enabled = false;
 
+        switch(endState)
+        {
+            case LOSE_ROLLER:
+                endText = "Vos rollers se sont brisés...";
+                AkSoundEngine.PostEvent("Roller_destroyed_event", GameManager.instance.gameObject);
+                break;
+            case LOSE_POLICE:
+                endText = "Vous avez été arrêté par la police...";
+                AkSoundEngine.PostEvent("Arrested_event", GameManager.instance.gameObject);
+                break;
+            case WIN_COLLECTIBLE:
+                endText = "Vous avez récupéré les différents composants du Cutter Laser! \n Vous réussissez à vous échapper!";
+                AkSoundEngine.PostEvent("", GameManager.instance.gameObject);
+                break;
+        }
+
+        isGameOver = true;
         gameOverText.gameObject.SetActive(true);
-        gameOverText.text = text;
+        gameOverText.text = endText;
         restartButton.gameObject.SetActive(true);
         //camera.GetComponent<AudioSource>().Play();
     }
@@ -103,7 +128,7 @@ public class GameManager : MonoBehaviour
             GameObject.Find("Collectible " + collectibles.Count).GetComponent<SpriteRenderer>().enabled = true;
             collectibles.RemoveAt(0);
             if(collectibles.Count <= 0)
-                GameOver("Vous avez récupéré les différents composants du Cutter Laser! \n Vous réussissez à vous échapper!");
+                GameOver(WIN_COLLECTIBLE);
 
         }
     }
