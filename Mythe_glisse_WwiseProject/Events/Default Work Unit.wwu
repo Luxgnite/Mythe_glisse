@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{CF08A6D6-1EC5-48C6-8B69-ECE071124376}" SchemaVersion="94">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{CF08A6D6-1EC5-48C6-8B69-ECE071124376}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Arrested_event" ID="{9F51394A-6A62-4F75-BB3F-38A3B87A2191}">
+					<ChildrenList>
+						<Action Name="" ID="{B279528F-1433-46AF-BF48-7DBC0550E60A}" ShortID="1024698963">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Arrestation_2" ID="{884E4CF0-DFD2-4889-9E3F-C3598A733035}" WorkUnitID="{717B1285-8E09-430E-BB31-791C475E9A17}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Police_alarm_event" ID="{211669AF-F675-46C8-B70E-0EEB93241628}">
+					<ChildrenList>
+						<Action Name="" ID="{1A2F22BD-3712-4DB9-B756-9B24C8812D7A}" ShortID="60063099">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Da_MADAFUCKAZ_Police" ID="{0DB59D50-230E-4EF8-97E3-97624405E175}" WorkUnitID="{717B1285-8E09-430E-BB31-791C475E9A17}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Pick_collectible" ID="{543808A7-6594-47DA-8F85-4EE9CE620A60}">
+					<ChildrenList>
+						<Action Name="" ID="{7F160116-13D6-4A50-85E6-C6BDCDD26318}" ShortID="774522684">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Composant" ID="{B4E55C14-403B-4DF6-A138-8D26C8E2AC95}" WorkUnitID="{717B1285-8E09-430E-BB31-791C475E9A17}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Roller_destroyed_event" ID="{F971CD30-E760-4F7B-B658-91CDE9C6A788}">
+					<ChildrenList>
+						<Action Name="" ID="{6C4BF22D-F318-4F32-AE2C-0BB4B6CE9A18}" ShortID="25336620">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rollers_detruits" ID="{52E11438-FFA8-4735-87B4-3F1E806DDD70}" WorkUnitID="{717B1285-8E09-430E-BB31-791C475E9A17}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

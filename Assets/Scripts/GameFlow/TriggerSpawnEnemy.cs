@@ -10,6 +10,9 @@ public class TriggerSpawnEnemy : MonoBehaviour
     {
         Debug.Log("TRIGGERED");
         if (collision.gameObject.tag == "Player")
+        {
+            AkSoundEngine.PostEvent("Police_alarm_event", GameManager.instance.gameObject);
             toTrigger.Spawn();
+        }
     }
 }

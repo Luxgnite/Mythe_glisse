@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="134">
+	<RootPaths>
+		<ProjectRoot>D:\Users\Ewan\Documents\Projets\Mythe_glisse\Mythe_glisse_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Users\Ewan\Documents\Projets\Mythe_glisse\Mythe_glisse_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Users\Ewan\Documents\Projets\Mythe_glisse\Mythe_glisse_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\Users\Ewan\Documents\Projets\Mythe_glisse\Mythe_glisse_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="378908400" Name="Arrested_event" ObjectPath="\Events\Default Work Unit\Arrested_event" DurationType="OneShot" DurationMin="10.000000" DurationMax="10.000000"/>
+				<Event Id="686279469" Name="Pick_collectible" ObjectPath="\Events\Default Work Unit\Pick_collectible" DurationType="OneShot" DurationMin="1.100000" DurationMax="1.100000"/>
+				<Event Id="68097940" Name="Police_alarm_event" ObjectPath="\Events\Default Work Unit\Police_alarm_event" DurationType="OneShot" DurationMin="1.700000" DurationMax="1.700000"/>
+				<Event Id="1962511028" Name="Roller_destroyed_event" ObjectPath="\Events\Default Work Unit\Roller_destroyed_event" DurationType="OneShot" DurationMin="4.995193" DurationMax="4.995193"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="144799100" Language="SFX">
+					<ShortName>Sound\Composant.wav</ShortName>
+					<Path>SFX\Sound\Composant_10C4C929.wem</Path>
+				</File>
+				<File Id="837003393" Language="SFX">
+					<ShortName>Sound\Rollers_detruits.wav</ShortName>
+					<Path>SFX\Sound\Rollers_detruits_10C4C929.wem</Path>
+				</File>
+				<File Id="864317456" Language="SFX">
+					<ShortName>Sound\Da_MADAFUCKAZ_Police.wav</ShortName>
+					<Path>SFX\Sound\Da_MADAFUCKAZ_Police_10C4C929.wem</Path>
+				</File>
+				<File Id="1053015446" Language="SFX">
+					<ShortName>Sound\Arrestation_2.wav</ShortName>
+					<Path>SFX\Sound\Arrestation_2_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
