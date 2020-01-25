@@ -1,6 +1,12 @@
 Event	ID	Name			Wwise Object Path	Notes
-	123833213	AsYouWant_event			\Default Work Unit\AsYouWant_event	
+	68097940	Police_alarm_event			\Default Work Unit\Police_alarm_event	
+	378908400	Arrested_event			\Default Work Unit\Arrested_event	
+	686279469	Pick_collectible			\Default Work Unit\Pick_collectible	
+	1962511028	Roller_destroyed_event			\Default Work Unit\Roller_destroyed_event	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	144799100	Composant	D:\Users\Ewan\Documents\Projets\Mythe_glisse\Mythe_glisse_WwiseProject\.cache\Mac\SFX\Sound\Composant_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound\Composant		194104
 	837003393	Rollers_detruits	D:\Users\Ewan\Documents\Projets\Mythe_glisse\Mythe_glisse_WwiseProject\.cache\Mac\SFX\Sound\Rollers_detruits_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound\Rollers_detruits		881280
+	864317456	Da_MADAFUCKAZ_Police	D:\Users\Ewan\Documents\Projets\Mythe_glisse\Mythe_glisse_WwiseProject\.cache\Mac\SFX\Sound\Da_MADAFUCKAZ_Police_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound\Da_MADAFUCKAZ_Police		150004
+	1053015446	Arrestation_2	D:\Users\Ewan\Documents\Projets\Mythe_glisse\Mythe_glisse_WwiseProject\.cache\Mac\SFX\Sound\Arrestation_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound\Arrestation_2		1764128
 

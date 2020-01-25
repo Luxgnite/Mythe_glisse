@@ -31,7 +31,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: a1a5e38c213bb64abea6c2596ae4bd7f
     GuidInternal: 
-    m_lastTime: -8586220467815122731
+    m_lastTime: -8586216947147027297
     List:
     - name: Main
       guid: 5efb9ec500cf134dbd63b389c459146a
@@ -47,17 +47,53 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: d6a608cfc51ec6488b69ece071124376
     GuidInternal: 
-    m_lastTime: -8586220467815162166
+    m_lastTime: -8586216947253074863
     List:
-    - name: AsYouWant_event
+    - name: Arrested_event
       guid: 4a39519f626a754fbb3f38a3b87a2191
-      id: 123833213
+      id: 378908400
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: AsYouWant_event
+      - ElementName: Arrested_event
         ObjectType: 3
-      Path: Default Work Unit\AsYouWant_event
+      Path: Default Work Unit\Arrested_event
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Pick_componant_event
+      guid: a70838549465da478f854ee9ce620a60
+      id: 1764974443
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Pick_componant_event
+        ObjectType: 3
+      Path: Default Work Unit\Pick_componant_event
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Police_alarm_event
+      guid: af69162175f6c846b70e0eeb93241628
+      id: 68097940
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Police_alarm_event
+        ObjectType: 3
+      Path: Default Work Unit\Police_alarm_event
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Roller_destroyed_event
+      guid: 30cd71f960e77b4fb65891cde9c6a788
+      id: 1962511028
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Roller_destroyed_event
+        ObjectType: 3
+      Path: Default Work Unit\Roller_destroyed_event
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -73,14 +109,14 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: d2adea11f1577c4fad412e50b9bf5000
     GuidInternal: 
-    m_lastTime: -8586220546528922602
+    m_lastTime: -8586216963118269218
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 05377646cd67a644a38e0bc2455c9ac1
     GuidInternal: 
-    m_lastTime: -8586220546529142480
+    m_lastTime: -8586216963118329172
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu

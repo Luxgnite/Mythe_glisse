@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fc36548dcacc30e49a90a1f759e57eed, type: 3}
-  m_Name: 9F51394A-6A62-4F75-BB3F-38A3B87A2191
+  m_Name: 543808A7-6594-47DA-8F85-4EE9CE620A60
   m_EditorClassIdentifier: 
-  objectName: Arrested_event
-  id: 378908400
-  guid: 9F51394A-6A62-4F75-BB3F-38A3B87A2191
+  objectName: Pick_collectible
+  id: 686279469
+  guid: 543808A7-6594-47DA-8F85-4EE9CE620A60

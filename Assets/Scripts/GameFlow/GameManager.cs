@@ -36,7 +36,10 @@ public class GameManager : MonoBehaviour
     void FixedUpdate()
     {
         if (rollerLife <= 0)
+        {
+            AkSoundEngine.PostEvent("Roller_destroyed_event", this.gameObject);
             GameOver("Vos rollers se sont brisés");
+        }
     }
 
     public void InitGame()
@@ -51,6 +54,7 @@ public class GameManager : MonoBehaviour
 
     public void RestartLevel()
     {
+        AkSoundEngine.StopAll();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
@@ -95,6 +99,7 @@ public class GameManager : MonoBehaviour
     {
         if (collectibles.Count > 0)
         {
+            AkSoundEngine.PostEvent("Pick_collectible", this.gameObject);
             GameObject.Find("Collectible " + collectibles.Count).GetComponent<SpriteRenderer>().enabled = true;
             collectibles.RemoveAt(0);
             if(collectibles.Count <= 0)

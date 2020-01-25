@@ -3,7 +3,11 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{152B852A-A755-41F4-A170-D3A309A7EE61}">
 			<PropertyList>
+				<Property Name="Event Action List\{211669AF-F675-46C8-B70E-0EEB93241628}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{543808A7-6594-47DA-8F85-4EE9CE620A60}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{9F51394A-6A62-4F75-BB3F-38A3B87A2191}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{F971CD30-E760-4F7B-B658-91CDE9C6A788}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{FE6D3992-1470-4B34-904C-1911DCF7022A}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
@@ -21,7 +25,7 @@
 				<Property Name="General\LatestLanguage" Type="int32" Value="684519430"/>
 				<Property Name="General\LatestPlatform" Type="string" Value="Mac"/>
 				<Property Name="GenerateSoundBanks\x64_SelectedLanguages" Type="string" Value="BvDMKA=="/>
-				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="P67xIQCCpk6Yzy+b0M5z5g=="/>
+				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="B6ZqCiaBvEaRXAFFYgQEpD+u8SEAgqZOmM8vm9DOc+Y="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="XvuexQDPE029Y7OJxFkUag=="/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
 				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="K7PTasbQvEGjpynYzzPCSAH/////////LuYoOqI9Qkm4qWVlrzbghgH/////////"/>
@@ -42,6 +46,7 @@
 				<Property Name="MonitoringManager\WatchMgr\WatchesVersion" Type="int32" Value="7"/>
 				<Property Name="MonitoringManager\WatchMgr\x64_GameSyncWatches" Type="string" Value=""/>
 				<Property Name="MonitoringManager\WatchMgr\x64_Watches" Type="string" Value=""/>
+				<Property Name="Music Transition List\{B5EE368B-B99E-46CA-9105-2B035FCFA7FA}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\FirstVisible_10_1" Type="string" Value="{4C96B38B-3DB4-40C7-91C9-665510E38993}"/>
 				<Property Name="ProjectExplorer\FirstVisible_11_1" Type="string" Value="{23EC2DE3-3ED8-4B82-AC99-92E25F2E4C6B}"/>
 				<Property Name="ProjectExplorer\FirstVisible_1_1" Type="string" Value="{2388DAEA-9775-46C6-A2ED-C5222A397756}"/>
