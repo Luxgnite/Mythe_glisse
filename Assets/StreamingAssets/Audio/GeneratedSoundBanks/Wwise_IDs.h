@@ -17,7 +17,23 @@ namespace AK
         static const AkUniqueID PICK_COLLECTIBLE = 686279469U;
         static const AkUniqueID POLICE_ALARM_EVENT = 68097940U;
         static const AkUniqueID ROLLER_DESTROYED_EVENT = 1962511028U;
+        static const AkUniqueID ROLLER_SOUND_EVENT = 3738053536U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace GROUND_OR_AIR_GROUP
+        {
+            static const AkUniqueID GROUP = 582155773U;
+
+            namespace STATE
+            {
+                static const AkUniqueID AIR = 1050421051U;
+                static const AkUniqueID GROUND = 2528658256U;
+            } // namespace STATE
+        } // namespace GROUND_OR_AIR_GROUP
+
+    } // namespace STATES
 
     namespace BANKS
     {

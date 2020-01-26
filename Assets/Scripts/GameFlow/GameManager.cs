@@ -47,6 +47,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        AkSoundEngine.PostEvent("Roller_sound_event", this.gameObject);
+    }
+
     public void InitGame()
     {
         Debug.Log("Initializing game...");
@@ -56,6 +61,10 @@ public class GameManager : MonoBehaviour
 
         rollerLife = startingRollerLife;
         isGameOver = false;
+
+        
+        AkSoundEngine.SetState("Ground_or_Air_group", "Ground");
+        
     }
 
     public void RestartLevel()
@@ -101,15 +110,15 @@ public class GameManager : MonoBehaviour
         {
             case LOSE_ROLLER:
                 endText = "Vos rollers se sont brisés...";
-                AkSoundEngine.PostEvent("Roller_destroyed_event", GameManager.instance.gameObject);
+                AkSoundEngine.PostEvent("Roller_destroyed_event", this.gameObject);
                 break;
             case LOSE_POLICE:
                 endText = "Vous avez été arrêté par la police...";
-                AkSoundEngine.PostEvent("Arrested_event", GameManager.instance.gameObject);
+                AkSoundEngine.PostEvent("Arrested_event", this.gameObject);
                 break;
             case WIN_COLLECTIBLE:
                 endText = "Vous avez récupéré les différents composants du Cutter Laser! \n Vous réussissez à vous échapper!";
-                AkSoundEngine.PostEvent("", GameManager.instance.gameObject);
+                AkSoundEngine.PostEvent("", this.gameObject);
                 break;
         }
 
