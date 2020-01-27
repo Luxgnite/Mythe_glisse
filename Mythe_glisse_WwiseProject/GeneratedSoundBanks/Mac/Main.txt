@@ -1,22 +1,41 @@
 Event	ID	Name			Wwise Object Path	Notes
 	68097940	Police_alarm_event			\Default Work Unit\Police_alarm_event	
 	378908400	Arrested_event			\Default Work Unit\Arrested_event	
-	686279469	Pick_collectible			\Default Work Unit\Pick_collectible	
 	1962511028	Roller_destroyed_event			\Default Work Unit\Roller_destroyed_event	
+	2413921907	Crash_obstacle_event			\Default Work Unit\Crash_obstacle_event	
+	2476389456	Police_moto_event			\Default Work Unit\Police_moto_event	
+	3625263358	Game_Music_event			\Default Work Unit\Game_Music_event	
 	3738053536	Roller_sound_event			\Default Work Unit\Roller_sound_event	
+	4173814816	Pick_collectible_event			\Default Work Unit\Pick_collectible_event	
 
 State Group	ID	Name			Wwise Object Path	Notes
 	582155773	Ground_or_Air_group			\Default Work Unit\Ground_or_Air_group	
+	1667447500	Moto_or_not_group			\Default Work Unit\Moto_or_not_group	
+	2123311288	Explo_or_chase_group			\Default Work Unit\Explo_or_chase_group	
 
 State	ID	Name	State Group			Notes
 	0	None	Ground_or_Air_group			
 	1050421051	Air	Ground_or_Air_group			
 	2528658256	Ground	Ground_or_Air_group			
+	0	None	Moto_or_not_group			
+	3044759698	Moto	Moto_or_not_group			
+	4199420240	No_Moto	Moto_or_not_group			
+	0	None	Explo_or_chase_group			
+	417490929	Chase	Explo_or_chase_group			
+	1432716332	Game_Over	Explo_or_chase_group			
+	2582085496	Exploration	Explo_or_chase_group			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	144799100	Composant	D:\Users\Ewan\Documents\Projets\Mythe_glisse\Mythe_glisse_WwiseProject\.cache\Mac\SFX\Sound\Composant_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound\Composant		194104
+	565311643	Zbim	D:\Users\Ewan\Documents\Projets\Mythe_glisse\Mythe_glisse_WwiseProject\.cache\Mac\SFX\Zbim_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound\Crash_obstacle\Zbim		441064
+	740365329	Explo_1	D:\Users\Ewan\Documents\Projets\Mythe_glisse\Mythe_glisse_WwiseProject\.cache\Mac\SFX\Explo_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Game_Music_Switch\Exploration_Pllaylist\Exploration_Theme\Explo_1		970264
+	756809739	Zblam	D:\Users\Ewan\Documents\Projets\Mythe_glisse\Mythe_glisse_WwiseProject\.cache\Mac\SFX\Zblam_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound\Crash_obstacle\Zblam		423424
 	837003393	Rollers_detruits	D:\Users\Ewan\Documents\Projets\Mythe_glisse\Mythe_glisse_WwiseProject\.cache\Mac\SFX\Sound\Rollers_detruits_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound\Rollers_detruits		881280
+	858073751	Moto_Vroum_Vroum	D:\Users\Ewan\Documents\Projets\Mythe_glisse\Mythe_glisse_WwiseProject\.cache\Mac\SFX\Moto_Vroum_Vroum_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Moto_Ambiant_Switch\Moto_Ambiant_Playlist\Moto_Vroum_Vroum\Moto_Vroum_Vroum		1663208
 	864317456	Da_MADAFUCKAZ_Police	D:\Users\Ewan\Documents\Projets\Mythe_glisse\Mythe_glisse_WwiseProject\.cache\Mac\SFX\Sound\Da_MADAFUCKAZ_Police_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound\Da_MADAFUCKAZ_Police		150004
 	1053015446	Arrestation_2	D:\Users\Ewan\Documents\Projets\Mythe_glisse\Mythe_glisse_WwiseProject\.cache\Mac\SFX\Sound\Arrestation_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sound\Arrestation_2		1764128
 	1064041526	Rollers	D:\Users\Ewan\Documents\Projets\Mythe_glisse\Mythe_glisse_WwiseProject\.cache\Mac\SFX\Rollers_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Ambiant_Sound_Switch\Ambiant_sound_playlist\Rolling_sound\Rollers		1446544
+
+Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	453402601	ebauche_finale	D:\Users\Ewan\Documents\Projets\Mythe_glisse\Mythe_glisse_WwiseProject\.cache\Mac\SFX\ebauche_finale_D79FB2B7.wem	453402601.wem	\Interactive Music Hierarchy\Default Work Unit\Game_Music_Switch\Course_Poursuite_Playlist\Course_Poursuite_Theme\ebauche_finale	
 

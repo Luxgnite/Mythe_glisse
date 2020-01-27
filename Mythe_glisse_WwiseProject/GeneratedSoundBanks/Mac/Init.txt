@@ -1,10 +1,18 @@
 State Group	ID	Name			Wwise Object Path	Notes
-	582155773	Ground_or_air_group			\Default Work Unit\Ground_or_air_group	
+	582155773	Ground_or_Air_group			\Default Work Unit\Ground_or_Air_group	
+	1667447500	Moto_or_not_group			\Default Work Unit\Moto_or_not_group	
+	2123311288	Explo_or_chase_group			\Default Work Unit\Explo_or_chase_group	
 
 State	ID	Name	State Group			Notes
-	0	None	Ground_or_air_group			
-	1050421051	Air	Ground_or_air_group			
-	2528658256	Ground	Ground_or_air_group			
+	0	None	Ground_or_Air_group			
+	1050421051	Air	Ground_or_Air_group			
+	2528658256	Ground	Ground_or_Air_group			
+	0	None	Moto_or_not_group			
+	3044759698	Moto	Moto_or_not_group			
+	4199420240	No_Moto	Moto_or_not_group			
+	0	None	Explo_or_chase_group			
+	417490929	Chase	Explo_or_chase_group			
+	2582085496	Exploration	Explo_or_chase_group			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	

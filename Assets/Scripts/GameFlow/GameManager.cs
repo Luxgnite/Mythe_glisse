@@ -49,7 +49,11 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        AkSoundEngine.SetState("Ground_or_Air_group", "Ground");
         AkSoundEngine.PostEvent("Roller_sound_event", this.gameObject);
+
+        AkSoundEngine.SetState("Explo_or_chase_group", "Exploration");
+        AkSoundEngine.PostEvent("Game_Music_event", this.gameObject);
     }
 
     public void InitGame()
@@ -60,11 +64,7 @@ public class GameManager : MonoBehaviour
         collectibles = new List<Collectible>(GetComponent<LevelParameters>().collectibles);
 
         rollerLife = startingRollerLife;
-        isGameOver = false;
-
-        
-        AkSoundEngine.SetState("Ground_or_Air_group", "Ground");
-        
+        isGameOver = false;        
     }
 
     public void RestartLevel()
@@ -126,14 +126,14 @@ public class GameManager : MonoBehaviour
         gameOverText.gameObject.SetActive(true);
         gameOverText.text = endText;
         restartButton.gameObject.SetActive(true);
-        //camera.GetComponent<AudioSource>().Play();
+        AkSoundEngine.SetState("Explo_or_chase_group", "Game_Over");
     }
 
     public void CollectItem()
     {
         if (collectibles.Count > 0)
         {
-            AkSoundEngine.PostEvent("Pick_collectible", this.gameObject);
+            AkSoundEngine.PostEvent("Pick_collectible_event", this.gameObject);
             GameObject.Find("Collectible " + collectibles.Count).GetComponent<SpriteRenderer>().enabled = true;
             collectibles.RemoveAt(0);
             if(collectibles.Count <= 0)

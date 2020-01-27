@@ -17,12 +17,14 @@ public class Obstacle : MonoBehaviour
             movementPlayer.canAccel = false;
             movementPlayer.actualSpeedLevel = 0;
             GameManager.instance.LoseLife();
+            AkSoundEngine.PostEvent("Crash_obstacle_event", GameManager.instance.gameObject);
         }
 
         if(collision.gameObject.tag == "Enemy")
         {
             collision.GetComponent<Moto>().StopMovement();
             collision.GetComponent<Moto>().enabled = false;
+            AkSoundEngine.SetState("Moto_or_not_group", "No_Moto");
         }
     }
 

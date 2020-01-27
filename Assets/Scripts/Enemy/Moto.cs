@@ -12,6 +12,8 @@ public class Moto : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        AkSoundEngine.SetState("Moto_or_not_group", "Moto");
+        AkSoundEngine.PostEvent("Police_moto_event", GameManager.instance.gameObject);
     }
 
     // Update is called once per frame

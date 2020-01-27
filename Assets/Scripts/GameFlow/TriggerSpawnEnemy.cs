@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TriggerSpawnEnemy : MonoBehaviour
+public class TriggerSpawnEnemy : Trigger
 {
     public SpawnEnemy toTrigger;
 
@@ -11,7 +11,6 @@ public class TriggerSpawnEnemy : MonoBehaviour
         Debug.Log("TRIGGERED");
         if (collision.gameObject.tag == "Player")
         {
-            AkSoundEngine.PostEvent("Police_alarm_event", GameManager.instance.gameObject);
             toTrigger.Spawn();
         }
     }

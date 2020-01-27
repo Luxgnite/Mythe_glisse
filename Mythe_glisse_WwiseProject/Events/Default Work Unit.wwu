@@ -25,7 +25,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Pick_collectible" ID="{543808A7-6594-47DA-8F85-4EE9CE620A60}">
+				<Event Name="Pick_collectible_event" ID="{543808A7-6594-47DA-8F85-4EE9CE620A60}">
 					<ChildrenList>
 						<Action Name="" ID="{7F160116-13D6-4A50-85E6-C6BDCDD26318}" ShortID="774522684">
 							<ReferenceList>
@@ -53,6 +53,39 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Ambiant_Sound_Switch" ID="{EE8B33CA-40F6-4068-A065-17E38DB6F712}" WorkUnitID="{1DA9B6EE-119C-4D05-86A0-C7DC4043B7E5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Police_moto_event" ID="{3BBADC8D-7083-4668-A6EE-4F7885D19901}">
+					<ChildrenList>
+						<Action Name="" ID="{205F3E57-B3DE-4751-8762-46184B4DDB6B}" ShortID="198954210">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Moto_Ambiant_Switch" ID="{07A8112D-C029-46E5-AEBE-760E47868B25}" WorkUnitID="{1DA9B6EE-119C-4D05-86A0-C7DC4043B7E5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Crash_obstacle_event" ID="{B0267A30-5021-4214-894B-4DE7E810F666}">
+					<ChildrenList>
+						<Action Name="" ID="{E74154AA-537D-4BD2-9257-BDB58D39CF84}" ShortID="797042071">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Crash_obstacle" ID="{4AB86274-037E-43A8-AC5B-E7F00BF38F0B}" WorkUnitID="{717B1285-8E09-430E-BB31-791C475E9A17}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Game_Music_event" ID="{48A2E9E3-5E6F-446B-B586-3DF868F43E6F}">
+					<ChildrenList>
+						<Action Name="" ID="{59176237-EFA6-4AE0-819B-EE92FB71DEF2}" ShortID="397148578">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Game_Music_Switch" ID="{2D8E620D-5328-4DE0-99FB-85C59C9132A6}" WorkUnitID="{1DA9B6EE-119C-4D05-86A0-C7DC4043B7E5}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
