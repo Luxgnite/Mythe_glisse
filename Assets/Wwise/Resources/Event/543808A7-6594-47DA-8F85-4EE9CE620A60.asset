@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc36548dcacc30e49a90a1f759e57eed, type: 3}
   m_Name: 543808A7-6594-47DA-8F85-4EE9CE620A60
   m_EditorClassIdentifier: 
-  objectName: Pick_collectible
-  id: 686279469
+  objectName: Pick_collectible_event
+  id: 4173814816
   guid: 543808A7-6594-47DA-8F85-4EE9CE620A60

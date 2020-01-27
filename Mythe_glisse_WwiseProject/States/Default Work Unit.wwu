@@ -10,6 +10,21 @@
 						<State Name="Air" ID="{1638A13C-5AA6-4872-A9C8-D5C4C1EF167D}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="Explo_or_chase_group" ID="{384F77DD-8847-4B80-A22B-A682F8D85723}">
+					<ChildrenList>
+						<State Name="None" ID="{0538BA75-352E-4A59-94E4-41B93D450D0A}"/>
+						<State Name="Exploration" ID="{45F04A09-D34F-45DF-A2A3-9ABBB5066898}"/>
+						<State Name="Chase" ID="{ADB51682-ACE0-40C1-AAAA-5AAC4BF14090}"/>
+						<State Name="Game_Over" ID="{96570F69-1541-49B5-88CF-D5021F94E0DE}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Moto_or_not_group" ID="{C2CE911D-AC14-43B1-B541-51D6C71EF913}">
+					<ChildrenList>
+						<State Name="None" ID="{9AD6E329-AB30-473F-AEB5-B07EF2CA96F0}"/>
+						<State Name="Moto" ID="{2E69E523-D65E-4B9B-87CB-62A8B19E2473}"/>
+						<State Name="No_Moto" ID="{DFA27566-87C2-4455-A1D4-B9AA33FE557C}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

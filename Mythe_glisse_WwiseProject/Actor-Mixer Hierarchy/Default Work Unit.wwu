@@ -77,6 +77,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Arrivee_forces_de_lordre" ID="{F5EE9F86-FD26-4B30-88FF-3352123D8D6C}" ShortID="437550778">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D06FB73D-5B8F-4A79-9233-9202F397C86B}"/>
@@ -209,6 +216,82 @@
 								<ActiveSource Name="Rollers_detruits" ID="{1F449447-7410-469A-9640-AFF5C9EDD566}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="Moto_Vroum_Vroum" ID="{0C5FCA56-6911-436B-8A98-A955C43EDA3B}" ShortID="825803085">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D06FB73D-5B8F-4A79-9233-9202F397C86B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{98BE032D-45D6-42BB-9FE5-F9D4E9F42F18}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Moto_Vroum_Vroum" ID="{B20FB1DE-FB08-47EF-8BBB-CB04E4D777AE}" ShortID="488289319">
+									<Language>SFX</Language>
+									<AudioFile>Moto_Vroum_Vroum.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Moto_Vroum_Vroum" ID="{B20FB1DE-FB08-47EF-8BBB-CB04E4D777AE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="Crash_obstacle" ID="{4AB86274-037E-43A8-AC5B-E7F00BF38F0B}" ShortID="824898751">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-15</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D06FB73D-5B8F-4A79-9233-9202F397C86B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{98BE032D-45D6-42BB-9FE5-F9D4E9F42F18}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Zbim" ID="{937CFF1C-FE55-40A3-999B-C7F65EEA3B3D}" ShortID="503766643">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D06FB73D-5B8F-4A79-9233-9202F397C86B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{98BE032D-45D6-42BB-9FE5-F9D4E9F42F18}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Zbim" ID="{F2E8987A-855A-4924-A830-C1F882F09F5B}" ShortID="565311643">
+											<Language>SFX</Language>
+											<AudioFile>Zbim.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Zbim" ID="{F2E8987A-855A-4924-A830-C1F882F09F5B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Zblam" ID="{06379567-9C41-40A7-8090-6EB1641F5388}" ShortID="269010984">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D06FB73D-5B8F-4A79-9233-9202F397C86B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{98BE032D-45D6-42BB-9FE5-F9D4E9F42F18}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Zblam" ID="{BFBB7417-E092-4B4B-A920-F3AE02CBDE8C}" ShortID="756809739">
+											<Language>SFX</Language>
+											<AudioFile>Zblam.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Zblam" ID="{BFBB7417-E092-4B4B-A920-F3AE02CBDE8C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
