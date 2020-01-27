@@ -25,6 +25,7 @@ public class Parallax : MonoBehaviour
 
         transform.position = new Vector3(startPosition + distance, transform.position.y, transform.position.z);
 
+        //Détermine 
         if (temp > startPosition + length)
             startPosition += length;
         else if (temp < startPosition - length)
